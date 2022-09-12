@@ -152,6 +152,7 @@ button:focus {
   letter-spacing: 00.03em;
   color: var(--primary-text-color);
   margin: 0;
+  /* commentar */
 }
 .why-we .container, 
 .what-we-do .container,
