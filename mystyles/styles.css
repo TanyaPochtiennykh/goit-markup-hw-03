@@ -31,6 +31,8 @@ body {
 }
 footer {
   background-color: var(--background-header-footer-color);
+padding-top: 60px;
+padding-bottom: 60px;
 }
 .hero {
   text-align: center;
@@ -39,12 +41,21 @@ footer {
   margin-bottom: 94px;
 }
 .container {
-  display: flex;
-  align-items: center;
-  background-color: #aaa;
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+}
+header .flex-container {
+  align-items: center;
+}
+.section {
+  padding-bottom: 94px;
 }
 .logo {
   color: var(--accent-color);
@@ -59,10 +70,8 @@ footer {
 .site-nav {
   display: flex;
 }
-
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
-  background-color: orange;
 }
 .site-nav .link {
   color: var(--title-and-nav-text-color);
@@ -86,7 +95,6 @@ footer {
   display: flex;
   margin: 0 0 0 auto;
 }
-
 .header-address .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -100,7 +108,7 @@ footer {
   font-style: normal;
 }
 .hero-title {
-  color: #ffffff;
+  color: #fff;
   font-weight: 900;
   font-size: 44px;
   letter-spacing: 0.06em;
@@ -151,25 +159,16 @@ button:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  /* margin: 0; */
-  /* commentar */
+  margin: 0;
 }
-.why-we .container, 
-.what-we-do .container,
-.who-we-are .container {
-  align-items: flex-start;
-  justify-content: center;
-  margin-bottom: 94px;
-}
-.why-we .item:not(:last-child),
-.what-we-do .item:not(:last-child),
-.who-we-are .item:not(:last-child) 
-{
-  margin-right: 30px;
-  background-color: orange;
+.why-we .item
+/* .who-we-are .item */ {
+  width: 270px;
 }
 .who-we-are {
   background-color: var(--primary-background-color);
+  text-align: center;
+  padding-top: 94px;
 }
 .what-we-do h2,
 .who-we-are h2 {
@@ -179,6 +178,7 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--title-and-nav-text-color);
   margin-bottom: 50px;
+  margin-top: 0;
   text-align: center;
 }
 .who-we-are h3 {

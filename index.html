@@ -4,39 +4,49 @@
     <meta charset="utf-8" />
     <meta name="домашне завдання 1" content="device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-        <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./mystyles/styles.css" />
-    </head>
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./mystyles/styles.css" />
+  </head>
   <body>
     <!-- шапка сайту -->
     <header>
       <div class="container">
-      <a href="index.html" class="logo"
-        >Web<span style="color: #000">Studio</span></a
-      >
-      <nav>
-        <ul class="site-nav list">
-          <li class="item"><a href="index.html" class="link current">Студія</a></li>
-          <li class="item"><a href="portfolio.html" class="link">Портфоліо</a></li>
-          <li class="item"><a href="" class="link">Контакти</a></li>
-        </ul>
-      </nav>
-      <ul class="header-address list">
-        <li class="item">
-          <a href="mailto:info@devstudio.com" class="link"
-            >info@devstudio.com</a
+        <div class="flex-container">
+          <a href="index.html" class="logo"
+            >Web<span style="color: #000">Studio</span></a
           >
-        </li>
-        <li class="item">
-          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+          <nav>
+            <ul class="site-nav list">
+              <li class="item">
+                <a href="index.html" class="link current">Студія</a>
+              </li>
+              <li class="item">
+                <a href="portfolio.html" class="link">Портфоліо</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="header-address list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -48,9 +58,9 @@
         </div>
       </section>
       <!-- why we section -->
-      <section class="why-we">
+      <section class="why-we container section">
         <h2 class="visually-hidden">Наші переваги</h2>
-        <ul class="list container">
+        <ul class="list flex-container">
           <li class="item">
             <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
             <p>
@@ -81,9 +91,9 @@
         </ul>
       </section>
       <!-- what we do section-->
-      <section class="what-we-do">
+      <section class="what-we-do container section">
         <h2>Чим ми займаємося</h2>
-        <ul class="list container">
+        <ul class="list flex-container">
           <li class="item">
             <img
               src="./images/what-we-do-1.jpg"
@@ -112,8 +122,9 @@
       </section>
       <!-- who are we section-->
       <section class="who-we-are">
+        <div class="container section">        
         <h2>Наша команда</h2>
-        <ul class="list container">
+        <ul class="list flex-container">
           <li class="team-member item">
             <img
               src="./images/igor-1.jpg"
@@ -155,10 +166,12 @@
             <p lang="en">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- footer -->
     <footer>
+      <div class="container">
       <a href="index.html" class="logo"
         >Web<span style="color: #fff">Studio</span></a
       >
@@ -187,6 +200,7 @@
           >
         </li>
       </ul>
+      </div>
     </footer>
   </body>
 </html>
