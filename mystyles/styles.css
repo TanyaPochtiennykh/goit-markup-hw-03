@@ -31,14 +31,21 @@ body {
 }
 footer {
   background-color: var(--background-header-footer-color);
-padding-top: 60px;
-padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .hero {
   text-align: center;
   background-color: var(--background-header-footer-color);
   padding: 200px 0;
   margin-bottom: 94px;
+}
+.hero-title {
+  color: #fff;
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  line-height: 1.36;
 }
 .container {
   width: 1200px;
@@ -54,8 +61,17 @@ padding-bottom: 60px;
 header .flex-container {
   align-items: center;
 }
+.filters {
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 50px;
+}
 .section {
   padding-bottom: 94px;
+}
+.section-portfolio-page {
+  padding-bottom: 71px;
+  padding-top: 117px;
 }
 .logo {
   color: var(--accent-color);
@@ -106,13 +122,6 @@ header .flex-container {
   line-height: 1.06;
   text-decoration: none;
   font-style: normal;
-}
-.hero-title {
-  color: #fff;
-  font-weight: 900;
-  font-size: 44px;
-  letter-spacing: 0.06em;
-  line-height: 1.36;
 }
 button {
   color: var(--button-text-color);
@@ -198,13 +207,12 @@ button:focus {
 .who-we-are .team-member {
   background-color: var(--background-color);
 }
-
 /* portfolio page styling */
 
 .portfolio .link {
   color: var(--title-and-nav-text-color);
   background-color: var(--filter-unactive-background);
-  padding: 6px 25px;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
