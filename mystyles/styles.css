@@ -18,28 +18,35 @@
   --background-color: #fff;
   --filter-unactive-background: #f5f4fa;
   --button-hover-color: #188ce8;
+  --card-set-gap: 30px;
+  --card-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 body {
   background-color: var(--background-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
 }
+
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 footer {
   background-color: var(--background-header-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .hero {
   text-align: center;
   background-color: var(--background-header-footer-color);
   padding: 200px 0;
   margin-bottom: 94px;
 }
+
 .hero-title {
   color: #fff;
   font-weight: 900;
@@ -47,32 +54,41 @@ footer {
   letter-spacing: 0.06em;
   line-height: 1.36;
 }
+
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 30px;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
+
 header .flex-container {
   align-items: center;
+  margin: 0;
 }
+
 .filters {
   justify-content: center;
   gap: 8px;
   padding-bottom: 50px;
 }
+
 .section {
   padding-bottom: 94px;
 }
+
 .section-portfolio-page {
   padding-bottom: 71px;
   padding-top: 117px;
 }
+
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -82,13 +98,16 @@ header .flex-container {
   letter-spacing: 0.03em;
   margin-right: 94px;
 }
+
 /* Site nav */
 .site-nav {
   display: flex;
 }
+
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
+
 .site-nav .link {
   color: var(--title-and-nav-text-color);
   font-weight: 500;
@@ -100,6 +119,7 @@ header .flex-container {
   display: block;
   padding: 32px 0;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .header-address .link:hover,
@@ -107,13 +127,16 @@ header .flex-container {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
 .header-address {
   display: flex;
   margin: 0 0 0 auto;
 }
+
 .header-address .item:not(:last-child) {
   margin-right: 50px;
 }
+
 .header-address .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -123,6 +146,7 @@ header .flex-container {
   text-decoration: none;
   font-style: normal;
 }
+
 button {
   color: var(--button-text-color);
   background-color: var(--accent-color);
@@ -136,10 +160,12 @@ button {
   border-radius: 4px;
   /* text-align: center;*/
 }
+
 button:hover,
 button:focus {
   background-color: var(--button-hover-color);
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -153,6 +179,7 @@ button:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .why-we h3 {
   font-weight: 700;
   font-size: 14px;
@@ -162,6 +189,7 @@ button:focus {
   text-transform: uppercase;
   margin: 0 0 10px 0;
 }
+
 .why-we p {
   font-weight: 400;
   font-size: 14px;
@@ -170,15 +198,25 @@ button:focus {
   color: var(--primary-text-color);
   margin: 0;
 }
-.why-we .item
-/* .who-we-are .item */ {
-  width: 270px;
+
+.why-we .item,
+.who-we-are .item,
+.what-we-do .item {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
+
+.what-we-do .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+}
+
 .who-we-are {
   background-color: var(--primary-background-color);
   text-align: center;
   padding-top: 94px;
 }
+
 .what-we-do h2,
 .who-we-are h2 {
   font-weight: 700;
@@ -190,6 +228,7 @@ button:focus {
   margin-top: 0;
   text-align: center;
 }
+
 .who-we-are h3 {
   font-weight: 500;
   font-size: 16px;
@@ -197,6 +236,7 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--title-and-nav-text-color);
 }
+
 .who-we-are p {
   font-weight: 400;
   font-size: 16px;
@@ -204,9 +244,14 @@ button:focus {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
 .who-we-are .team-member {
   background-color: var(--background-color);
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+  overflow: hidden;
 }
+
 /* portfolio page styling */
 
 .portfolio .link {
@@ -221,29 +266,57 @@ button:focus {
   font-style: normal;
   border: none;
 }
+
 .portfolio .link:hover,
-/*.portfolio .link:focus,*/
 .portfolio .link.current {
   color: var(--button-text-color);
   background-color: var(--accent-color);
 }
+
 .portfolio h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-and-nav-text-color);
+  margin: 0;
 }
+
 .portfolio a {
   text-decoration: none;
 }
+
 .portfolio p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin: 0;
 }
+
+.portfolio .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+/* PORTFOLIO PAGE UPDATE port */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  border: 1px solid #eee;
+}
+
+.card-content {
+  padding: 20px 24px;
+}
+
 /* footer page */
 
 .bottom-address .link {
