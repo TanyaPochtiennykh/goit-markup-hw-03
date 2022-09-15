@@ -16,34 +16,33 @@
 <body>
   <!-- шапка сайту -->
   <header>
-    <div class="container">
-      <div class="flex-container">
-        <a href="index.html" class="logo">Web<span style="color: #000">Studio</span></a>
-        <nav>
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="index.html" class="link current">Студія</a>
-            </li>
-            <li class="item">
-              <a href="portfolio.html" class="link">Портфоліо</a>
-            </li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="header-address list">
+    <div class="container header-flex">
+      <a href="index.html" class="logo">Web<span style="color: #000">Studio</span></a>
+      <nav>
+        <ul class="site-nav list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            <a href="index.html" class="link">Студія</a>
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="portfolio.html" class="link current">Портфоліо</a>
           </li>
+          <li class="item"><a href="" class="link">Контакти</a></li>
         </ul>
-      </div>
+      </nav>
+      <ul class="header-address list">
+        <li class="item">
+          <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+        </li>
+        <li class="item">
+          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </div>
   </header>
   <main>
     <!-- hero section -->
-    <section class="portfolio container section-portfolio-page">
+    <section class="portfolio">
+      <div class="container">
       <h1 class="visually-hidden">Growing business</h1>
       <!-- filters links-->
       <ul class="list flex-container filters">
@@ -157,6 +156,7 @@
           </a>
         </li>
       </ul>
+      </div>
     </section>
   </main>
   <!-- footer -->
